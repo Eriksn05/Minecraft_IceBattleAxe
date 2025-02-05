@@ -11,6 +11,6 @@ public class IceBattleAxe implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		//test
 	}
 }
