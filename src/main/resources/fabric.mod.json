@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "icebattleaxe",
+	"version": "${version}",
+	"name": "Ice Battle Axe",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Eriksn"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/icebattleaxe/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.eriksn.icebattleaxe.IceBattleAxe"
+		],
+		"fabric-datagen": [
+			"net.eriksn.icebattleaxe.IceBattleAxeDataGenerator"
+		],
+		"client": [
+			"net.eriksn.icebattleaxe.IceBattleAxeClient"
+		]
+	},
+	"mixins": [
+		"icebattleaxe.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
